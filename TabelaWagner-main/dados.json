@@ -1,0 +1,37 @@
+[
+    {
+        "nome" : "Giovana",
+        "idade" : 15,
+        "personalidade" : "ok",
+        "cidade": "Curitiba",
+        "ativo": true
+    },
+    {
+        "nome" : "Vitor",
+        "idade" : 16,
+        "personalidade" : "paia",
+        "cidade": "Pinhais",
+        "ativo": false
+    },
+    {
+        "nome" : "Isabelli",
+        "idade" : 16,
+        "personalidade" : "top",
+        "cidade": "Colombo",
+        "ativo": true
+    },
+    {
+        "nome" : "Lucas",
+        "idade" : 17,
+        "personalidade" : "legal",
+        "cidade": "Araucária",
+        "ativo": true
+    },
+    {
+        "nome" : "Mariana",
+        "idade" : 15,
+        "personalidade" : "tímida",
+        "cidade": "Fazenda Rio Grande",
+        "ativo": false
+    }
+]

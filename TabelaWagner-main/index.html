@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .modal-fundo {
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+    
+        .modal-conteudo {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 320px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: left; 
+        }
+
+        .modal-conteudo h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .btn-fechar {
+            background-color: #ffffff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <thead>
+            <tr id="tr">
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Personalidade</th>
+                <th>Cidade</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="place"></tbody>
+
+        <tfoot>
+            <tr>
+                <td><button type="button" onclick="mostrarColuna('nome')">Ver Nomes</button></td>
+                <td><button type="button" onclick="mostrarColuna('idade')">Ver Idades</button></td>
+                <td><button type="button" onclick="mostrarColuna('personalidade')">Ver Personalidades</button></td>
+                <td><button type="button" onclick="mostrarColuna('cidade')">Ver Cidades</button></td>
+                <td><button type="button" onclick="mostrarColuna('ativo')">Ver Status</button></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div id="minhaModal" class="modal-fundo">
+        <div class="modal-conteudo">
+            <h3 id="modalTitulo">Título</h3>
+            <ul id="modalLista"></ul> 
+            <button class="btn-fechar" onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
